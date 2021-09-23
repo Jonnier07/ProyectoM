@@ -1,6 +1,5 @@
-function checkApellido() {
+function checkApellido(Apellido) {
     var regex = new RegExp('[a-z]{4,30}');
-    var apell = document.getElementById("Apellido");
     if (regex.test(apell.value)) {
         alert("El apellido se ingreso correctamente")
         return true;
