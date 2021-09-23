@@ -1,5 +1,4 @@
-"use strict"
-let checkApellido = (apell) => {
+function checkApellido() {
     var regex = new RegExp('[a-z]{4,30}');
     var apell = document.getElementById("Apellido");
     if (regex.test(apell.value)) {
@@ -12,8 +11,11 @@ let checkApellido = (apell) => {
 
     } else {
         alert("El apellido no se ingreso correctamente")
-        return false;
+        return fales;
+
+
     };
+
 }
 
 module.exports = { checkApellido };
